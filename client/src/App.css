@@ -1,0 +1,262 @@
+body {
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  padding: 10px;
+  width: 98%;
+  margin: 0px auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 0px 20px;
+  z-index: 999;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+  font-weight: 600;
+}
+
+/* .post {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 20px;
+  margin-bottom: 35px;
+} */
+
+.IndexPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 690px) {
+  .post {
+    max-width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+  .blogImage {
+    width: 100%;
+  }
+}
+
+.text h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.text p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.text span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #464646;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.loginpage {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userForm {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.formHeading {
+  text-align: center;
+  margin: 10x 0px;
+}
+
+.userForm input {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+}
+
+.userForm button {
+  max-width: 100px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #f71661;
+  margin: 0px auto;
+  cursor: pointer;
+}
+
+.userForm button:hover {
+  background-color: #db1759;
+}
+
+.createPostForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: 30px auto;
+}
+.createPostFormInput {
+  padding: 12px;
+  border-radius: 10px;
+  outline: none;
+  border: 0.5px solid lightgray;
+  font-size: 14px;
+  font-weight: 600;
+}
+.createPostFormButton {
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  background-color: #f71661;
+  cursor: pointer;
+  border-radius: 10px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+.createPostFormButton:hover {
+  background-color: #db1759;
+}
+
+.PostPage {
+  padding: 20px 10px;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.postImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin: 30px 0px;
+}
+
+.postImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 600;
+  color: #acabab;
+}
+
+.authorInfo {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.postContent {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 20px 0px;
+}
+
+.editPost {
+  margin: 20px 0px;
+}
+
+.editPost button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  background-color: #f71661;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.editPost button:hover {
+  background-color: #db1759;
+}
